@@ -213,10 +213,7 @@ func process_input(sa selpg_args) {
 			fout, err_f = os.OpenFile(sa.print_dest, os.O_APPEND,0666)
 		}
 		check(err_f)
-	}
-	//fmt.Sprintf(s1, "lp -d%s", sa.print_dest)
-	//fout, err = os.Create(s1)
-	//check(err)
+	})
 
 	line_ctr = 0
 	page_ctr = 1

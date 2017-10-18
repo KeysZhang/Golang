@@ -131,16 +131,6 @@ func check_fout(printDest string) (*os.File, io.WriteCloser) {
 		fout = os.Stdout;
 		fout_d = nil
 	} else {
-<<<<<<< HEAD
-		_, err_f := os.Stat(sa.print_dest)
-		if os.IsNotExist(err_f){
-			fout, err_f = os.Create(sa.print_dest)
-		} else{
-			fout, err_f = os.OpenFile(sa.print_dest, os.O_APPEND,0666)
-		}
-		check(err_f)
-	})
-=======
 		fout = nil
 		var err_dest error
 		cmd := exec.Command("./" + printDest)
@@ -151,7 +141,6 @@ func check_fout(printDest string) (*os.File, io.WriteCloser) {
 		err_start := cmd.Start() 
 		check_err(err_start,"command-start")
 	}
->>>>>>> a780e752738b5cb79bc38dcc36e7e719acbde390
 
 	return fout, fout_d
 }

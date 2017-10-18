@@ -88,7 +88,7 @@
 
 ### 类型二
 
-####1. $ selpg -s10 -e20 -l66 input_file 
+####1. $ selpg -s10 -e20 -l66 input_file
 
 ![1-1.png](/结果截图/2-1.png)
 
